@@ -1,0 +1,1036 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* HEADER */
+header {
+    background: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    background: gray;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+/* HOME GRID */
+.grid-home {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+/* INFO */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+/* GALERIA */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery img, iframe {
+    width: 100%;
+}
+
+/* MAPA */
+.mapa iframe {
+    width: 100%;
+    height: 400px;
+}
+
+/* CONTACTE */
+.contacte {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* RESPONSIVE */
+
+/* Tablet */
+@media (max-width: 900px) {
+    .grid-home {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mòbil */
+@media (max-width: 600px) {
+    .grid-home,
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+}.grid-home {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-home div {
+    background: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.grid-home img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.info-grid img {
+    border-radius: 10px;
+}@media (max-width: 900px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+.map-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.map-section p {
+    margin-bottom: 20px;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
+}
+.map-links {
+    margin-top: 20px;
+}
+
+.map-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.map-links a:hover {
+    background: gray;
+}
+.map-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.map-links {
+    margin-top: 20px;
+}
+
+.map-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 18px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.map-links a:hover {
+    background: gray;
+}
+/* FONS GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #111827, #1e3a8a);
+    color: white;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(to right, #7c3aed, #06b6d4);
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0px 2px 10px black;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 45px;
+    color: white;
+}
+
+/* MENU */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #facc15;
+}
+
+/* SECCIONS */
+section {
+    padding: 30px;
+}
+
+/* CARDS */
+.grid-home div,
+.info-grid div,
+.map-links a {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.grid-home div:hover,
+.info-grid div:hover {
+    transform: scale(1.03);
+}
+
+/* IMATGES */
+img {
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+/* BOTONS MAPA */
+.map-links a {
+    display: inline-block;
+    padding: 12px 18px;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #06b6d4;
+}
+
+.map-links a:hover {
+    background: #06b6d4;
+    color: black;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #facc15;
+}
+
+/* TITOLS */
+h2 {
+    font-size: 38px;
+    color: #facc15;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .grid-home,
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
+/* CONTACTE */
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 60px;
+}
+
+.contact-text h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.contact-text p {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.contact-form {
+    background: rgba(255,255,255,0.1);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #facc15;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: white;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+.contact-section {
+    grid-template-columns: 1fr;
+}
+
+.contact-text h2 {
+    font-size: 40px;
+}
+
+}
+/* DISCOTEQUES INFO */
+
+.clubs-info {
+    padding: 40px;
+}
+
+.club-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 40px;
+    background: rgba(255,255,255,0.08);
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+}
+
+.club-card:hover {
+    transform: scale(1.02);
+}
+
+.club-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.club-card h3 {
+    color: #facc15;
+    font-size: 32px;
+}
+
+.club-card p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+.club-card {
+    grid-template-columns: 1fr;
+}
+
+}
+/* BOTONS DISCOTEQUES MAPA */
+
+.discoteques-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.discoteques-links a {
+    background: linear-gradient(135deg, #8a2be2, #00cfff);
+    color: white;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.discoteques-links a:hover {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #ff00cc, #3333ff);
+    box-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+/* ---------------- INFO SUPERIOR ---------------- */
+
+.info-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    padding: 60px;
+    margin: 40px;
+
+    background: rgba(255,255,255,0.05);
+
+    border-radius: 25px;
+
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+}
+
+.info-text{
+    flex: 1;
+}
+
+.info-text h2{
+    font-size: 55px;
+    color: #ffd43b;
+
+    margin-bottom: 30px;
+}
+
+.info-text p{
+    font-size: 22px;
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+
+    color: white;
+}
+
+.info-text h3{
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    color: #00d4ff;
+}
+
+.info-text ul{
+    padding-left: 25px;
+}
+
+.info-text li{
+    font-size: 22px;
+    margin-bottom: 12px;
+
+    color: white;
+}
+
+/* ---------------- IMATGE ---------------- */
+
+.info-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.info-image img{
+    width: 100%;
+    max-width: 700px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+
+    transition: 0.4s;
+}
+
+.info-image img:hover{
+    transform: scale(1.03);
+}
+
+/* ---------------- DISCOTEQUES HORITZONTALS ---------------- */
+
+.clubs-section{
+    padding: 50px;
+}
+
+/* TARGETA */
+
+.club-card{
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    background: rgba(255,255,255,0.06);
+
+    margin-bottom: 40px;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+
+    transition: 0.4s;
+}
+
+.club-card:hover{
+    transform: scale(1.01);
+
+    box-shadow: 0 0 30px rgba(0,212,255,0.4);
+}
+
+/* IMATGE */
+
+.club-card img{
+    width: 420px;
+
+    height: 260px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    flex-shrink: 0;
+}
+
+/* TEXT */
+
+.club-card-text{
+    flex: 1;
+}
+
+/* TITOL */
+
+.club-card h3{
+    font-size: 38px;
+
+    color: #ffd43b;
+
+    margin-bottom: 20px;
+}
+
+/* PARAGRAFS */
+
+.club-card p{
+    color: white;
+
+    font-size: 21px;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+/* TEXT DESTACAT */
+
+.club-card strong{
+    color: #00d4ff;
+}
+/* ---------------- ESTADISTIQUES ---------------- */
+
+.stats-section{
+    padding: 70px 50px;
+}
+
+.stats-section h2{
+    font-size: 55px;
+
+    color: #ffd43b;
+
+    margin-bottom: 50px;
+
+    text-align: center;
+}
+
+/* GRID */
+
+.stats-grid{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 30px;
+}
+
+/* TARGETA */
+
+.stat-card{
+    background: rgba(255,255,255,0.06);
+
+    padding: 40px 30px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    transition: 0.4s;
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.stat-card:hover{
+    transform: translateY(-10px);
+
+    box-shadow: 0 0 30px rgba(0,212,255,0.4);
+}
+
+/* NUMERO */
+
+.stat-card h3{
+    font-size: 55px;
+
+    color: #00d4ff;
+
+    margin-bottom: 15px;
+}
+
+/* TEXT */
+
+.stat-card p{
+    color: white;
+
+    font-size: 22px;
+
+    line-height: 1.5;
+}
+
+/* ---------------- DJS ---------------- */
+
+.dj-section{
+    padding: 70px 50px;
+}
+
+.dj-section h2{
+    font-size: 55px;
+
+    color: #ffd43b;
+
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+/* GRID DJS */
+
+.dj-grid{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 35px;
+}
+
+/* TARGETA DJ */
+
+.dj-card{
+    background: rgba(255,255,255,0.06);
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    transition: 0.4s;
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.dj-card:hover{
+    transform: scale(1.03);
+
+    box-shadow: 0 0 30px rgba(255,212,59,0.4);
+}
+
+/* NOM DJ */
+
+.dj-card h3{
+    color: #00d4ff;
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+/* DESCRIPCIO */
+
+.dj-card p{
+    color: white;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+}
+/* ---------------- HERO ---------------- */
+
+.hero{
+    height: 500px;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("../img/ibiza-night.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+/* TITOL */
+
+.hero h2{
+    font-size: 70px;
+
+    color: #ffd43b;
+
+    margin-bottom: 25px;
+
+    text-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/* TEXT */
+
+.hero p{
+    font-size: 28px;
+
+    color: white;
+
+    max-width: 900px;
+
+    line-height: 1.6;
+
+    text-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+/* ===== MULTIMEDIA ===== */
+
+.multimedia-section{
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.multimedia-section h2{
+    font-size: 60px;
+    color: #ffd028;
+    margin-bottom: 20px;
+}
+
+.multimedia-text{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.video-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.video-card{
+    width: 370px;
+    background-color: rgba(255,255,255,0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    padding-bottom: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.video-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(0,255,255,0.4);
+}
+
+.video-card iframe{
+    width: 100%;
+    height: 220px;
+    border: none;
+}
+
+.video-card h3{
+    color: white;
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+.video-card p{
+    color: #dcdcdc;
+    padding: 0 20px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.video-card a{
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #7b2ff7, #00c6ff);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.video-card a:hover{
+    transform: scale(1.05);
+}
+/* ===== MULTIMEDIA ===== */
+
+.multimedia-section{
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.multimedia-section h2{
+    font-size: 60px;
+    color: #ffd028;
+    margin-bottom: 20px;
+}
+
+.multimedia-text{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.video-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.video-card{
+    width: 370px;
+    background-color: rgba(255,255,255,0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    padding-bottom: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.video-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(0,255,255,0.4);
+}
+
+.video-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.video-card h3{
+    color: white;
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+.video-card p{
+    color: #dcdcdc;
+    padding: 0 20px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.video-card a{
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #7b2ff7, #00c6ff);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.video-card a:hover{
+    transform: scale(1.05);
+}
+/* ===== RESPONSIVE INFO ===== */
+
+@media screen and (max-width: 900px){
+
+    .club-card{
+        width: 90% !important;
+        margin: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .club-card img{
+        width: 100% !important;
+        height: 220px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    .club-card h3{
+        font-size: 38px;
+        margin-bottom: 15px;
+    }
+
+    .club-card p{
+        font-size: 22px;
+        line-height: 1.6;
+    }
+
+    .clubs-section{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+}
+/* ===== PAGINA ACTIVA MENU ===== */
+
+nav a.active{
+    color: #ffd028;
+    border-bottom: 3px solid #ffd028;
+    padding-bottom: 5px;
+}
